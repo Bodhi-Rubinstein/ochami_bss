@@ -71,9 +71,7 @@ dockers:
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
     goarch: amd64
-    goamd64: 
-      - v3
-      - v2
+    goamd64: v2
     extra_files:
       - LICENSE
       - CHANGELOG.md
