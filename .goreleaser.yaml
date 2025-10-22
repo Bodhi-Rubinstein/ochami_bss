@@ -18,6 +18,7 @@ builds:
       - arm64
     goamd64:
       - v3
+      - v2
     env:
       - CGO_ENABLED=0
     ldflags:
@@ -42,6 +43,7 @@ builds:
       - arm64
     goamd64:
       - v3
+      - v2
     env:
       - CGO_ENABLED=0
     ldflags:
@@ -69,7 +71,9 @@ dockers:
       - "--label=org.opencontainers.image.revision={{.FullCommit}}"
       - "--label=org.opencontainers.image.version={{.Version}}"
     goarch: amd64
-    goamd64: v3
+    goamd64: 
+      - v3
+      - v2
     extra_files:
       - LICENSE
       - CHANGELOG.md
