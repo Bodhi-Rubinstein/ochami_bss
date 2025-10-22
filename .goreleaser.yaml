@@ -17,7 +17,6 @@ builds:
       - amd64
       - arm64
     goamd64:
-      - v3
       - v2
     env:
       - CGO_ENABLED=0
@@ -42,7 +41,6 @@ builds:
       - amd64
       - arm64
     goamd64:
-      - v3
       - v2
     env:
       - CGO_ENABLED=0
